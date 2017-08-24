@@ -126,7 +126,10 @@ def Roll(text):
             rollMsg += ')'
         else:
             rollRes += e
-            rollMsg += e
+            if e == '*':
+                rollMsg += '\\*'
+            else:
+                rollMsg += e
 
     return rollMsg, str(eval(rollRes))
 
