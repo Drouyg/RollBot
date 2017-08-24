@@ -11,7 +11,11 @@ import calendar
 
 
 def RandomBetween(x,y):
-    return random.randint(x,y)
+    randl = []
+    for i in range(x,y+1):
+        randl.append(i)
+    random.shuffle(randl)
+    return randl[0]
 
 def IsANumber(c):
     return True if (48 <= ord(c) <= 57) else False
