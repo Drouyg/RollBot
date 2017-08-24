@@ -1,9 +1,9 @@
 import discord
 from discord.ext import commands
 
-des = 'Le meilleur des bots de test dans ton jardin'
+des = 'Le meilleur des bots de JDR dans ton jardin'
 
-prefix = '!'
+prefix = ''
 
 client = commands.Bot(description=des, command_prefix=prefix)
 
