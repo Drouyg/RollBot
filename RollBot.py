@@ -150,7 +150,7 @@ client = commands.Bot(description=des, command_prefix=prefix)
 
 @client.event
 async def on_ready():
-    print('The dices will be rolled')
+    print('The die will be rolled')
     client.loop.create_task(timer())
 
 
