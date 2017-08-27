@@ -188,7 +188,8 @@ async def on_message(message):
 
 async def timer():
     while not client.is_closed:
-        await asyncio.sleep(1)
+        await asyncio.sleep(60)
+        print(datetime.date.today().isoweekday(), datetime.datetime.now().hour, datetime.datetime.now().minute)
         if datetime.date.today().isoweekday() == 7 and datetime.datetime.now().hour == 12 and datetime.datetime.now().minute == 0:
             l1 =list(client.servers)
             for e in l1:
