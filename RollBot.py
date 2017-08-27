@@ -189,7 +189,7 @@ async def on_message(message):
 async def timer():
     while not client.is_closed:
         await asyncio.sleep(60)
-        if datetime.date.today().isoweekday() == 7 and datetime.datetime.now().hour == 10 and datetime.datetime.now().minute == 15:
+        if datetime.date.today().isoweekday() == 7 and datetime.datetime.now().hour == 10 and datetime.datetime.now().minute == 0:
             l1 =list(client.servers)
             for e in l1:
                 l2 =list(e.channels)
