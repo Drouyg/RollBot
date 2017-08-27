@@ -196,17 +196,18 @@ async def timer():
                 x=0
                 while str(l2[x].id) != '231128267485085706' and str(l2[x].id) != '348154317464928267':
                     x+=1
-                rand = random.randint(1, 5)
-                if rand == 1:
-                    await client.send_message(l2[x], '@everyone On est dimanche, balancez les dispos de la semaine !')
-                elif rand == 2:
-                    await client.send_message(l2[x], "@everyone Soon une session de JDR ? Balancez les dispos de la semaine !")
-                elif rand == 3:
-                    await client.send_message(l2[x], "@everyone C'est l'heure d'organiser la prochaine session ! Balancez les dispos de la semaine !")
-                elif rand == 4:
-                    await client.send_message(l2[x], "@everyone Le dimanche, c'est l'organisation du JDR. Balancez les dispos de la semaine !")
-                else:
-                    await client.send_message(l2[x], "@everyone Dimanche ! Balancez les dispos de la semaine ! :heart: ")
+                if str(l2[x].id) == '231128267485085706'
+                    rand = random.randint(1, 5)
+                    if rand == 1:
+                        await client.send_message(l2[x], '@everyone On est dimanche, balancez les dispos de la semaine !')
+                    elif rand == 2:
+                        await client.send_message(l2[x], "@everyone Soon une session de JDR ? Balancez les dispos de la semaine !")
+                    elif rand == 3:
+                        await client.send_message(l2[x], "@everyone C'est l'heure d'organiser la prochaine session ! Balancez les dispos de la semaine !")
+                    elif rand == 4:
+                        await client.send_message(l2[x], "@everyone Le dimanche, c'est l'organisation du JDR. Balancez les dispos de la semaine !")
+                    else:
+                        await client.send_message(l2[x], "@everyone Dimanche ! Balancez les dispos de la semaine ! :heart: ")
 
 
 
