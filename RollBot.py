@@ -17,6 +17,7 @@ def RandomBetween(x,y):
     random.shuffle(randl)
     return randl[0]
 
+
 def IsANumber(c):
     return True if (48 <= ord(c) <= 57) else False
 
@@ -210,6 +211,84 @@ async def timer():
                         await client.send_message(l2[x], "@everyone Dimanche ! Balancez les dispos de la semaine ! :heart: ")
 
 
+        if datetime.datetime.now().hour == 15 and datetime.datetime.now().minute == 30:
+        #if datetime.datetime.now().hour == 22 and datetime.datetime.now().minute == 47:
+            l1 =list(client.servers)
+            for e in l1:
+                l2 =list(e.channels)
+                x=0
+                while str(l2[x].id) != '351819412950482955' and str(l2[x].id) != '348154317464928267':
+                    x+=1
+                if str(l2[x].id) == '351819412950482955':
+                #if str(l2[x].id) == '348154317464928267':
+                    await client.send_message(l2[x], '<@252399214028390400> Il est 17h30, profite ! ;)')
+                    dejavu = []
+                    i = 3
+                    while i != 0:
+                        rand = random.randint(1, 15)
+                        if rand == 1 and not rand in dejavu:
+                            await client.send_message(l2[x], 'https://giphy.com/gifs/cats-bukkate-rX9brH8mRTCNO')
+                            dejavu.append(rand)
+                            i -= 1
+                        elif rand == 2 and not rand in dejavu:
+                            await client.send_message(l2[x], "https://giphy.com/gifs/cat-RWCWxfLy8ZkBy")
+                            dejavu.append(rand)
+                            i -= 1
+                        elif rand == 3 and not rand in dejavu:
+                            await client.send_message(l2[x], "https://giphy.com/gifs/cat-13oMMCI9JVtmdW")
+                            dejavu.append(rand)
+                            i -= 1
+                        elif rand == 4 and not rand in dejavu:
+                            await client.send_message(l2[x], "https://giphy.com/gifs/cat-door-ZXc21cfsCB5Ty")
+                            dejavu.append(rand)
+                            i -= 1
+                        elif rand == 5 and not rand in dejavu:
+                            await client.send_message(l2[x], "https://giphy.com/gifs/cat-bobi-gdb5ZAU9DASVG")
+                            dejavu.append(rand)
+                            i -= 1
+                        elif rand == 6 and not rand in dejavu:
+                            await client.send_message(l2[x], "https://giphy.com/gifs/cat-tMgR6zWCY1tDy")
+                            dejavu.append(rand)
+                            i -= 1
+                        elif rand == 7 and not rand in dejavu:
+                            await client.send_message(l2[x], "https://giphy.com/gifs/tXH8ljWiohVi8")
+                            dejavu.append(rand)
+                            i -= 1
+                        elif rand == 8 and not rand in dejavu:
+                            await client.send_message(l2[x], "https://giphy.com/gifs/10ThIRwKyYyQWQ")
+                            dejavu.append(rand)
+                            i -= 1
+                        elif rand == 9 and not rand in dejavu:
+                            await client.send_message(l2[x], "https://giphy.com/gifs/TJ7hXERD1NmrS")
+                            dejavu.append(rand)
+                            i -= 1
+                        elif rand == 10 and not rand in dejavu:
+                            await client.send_message(l2[x], "https://giphy.com/gifs/cat-cute-kitten-kSaOwfjJYtY6A")
+                            dejavu.append(rand)
+                            i -= 1
+                        elif rand == 11 and not rand in dejavu:
+                            await client.send_message(l2[x], "https://giphy.com/gifs/kitten-playful-tickles-mPIFo41G2ktFu")
+                            dejavu.append(rand)
+                            i -= 1
+                        elif rand == 12 and not rand in dejavu:
+                            await client.send_message(l2[x], "https://giphy.com/gifs/GSrYXzTYQAMCI")
+                            dejavu.append(rand)
+                            i -= 1
+                        elif rand == 13 and not rand in dejavu:
+                            await client.send_message(l2[x], "https://giphy.com/gifs/cat-watermelon-fVpfLZs4qMnTO")
+                            dejavu.append(rand)
+                            i -= 1
+                        elif rand == 14 and not rand in dejavu:
+                            await client.send_message(l2[x], "https://giphy.com/gifs/cute-kitten-playful-kq52QKDmxKPeM")
+                            dejavu.append(rand)
+                            i -= 1
+                        else:
+                            await client.send_message(l2[x], "https://giphy.com/gifs/kitten-playful-USQV0hKcprdeM")
+                            dejavu.append(rand)
+                            i -= 1
+                    dejavu.clear()
+
+
 
 
 
@@ -217,6 +296,7 @@ async def timer():
 
 #348154317464928267   -> general TestForBot
 #231128267485085706   -> organisation JDR
+#351819412950482955   -> Detente Axel
 
 """
 
